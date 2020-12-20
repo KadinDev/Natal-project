@@ -6,7 +6,7 @@
 
 - Início da Home
 ![home](https://user-images.githubusercontent.com/65264902/102721820-e9a35a80-42db-11eb-90ad-1355c884fbde.jpg)
-- Parte de Doadores, marcando no mapa de onde cada doador que passou pelo formulário mora (Rua, Endereço)
+- Parte de Doadores, marcando no mapa de onde cada doador que passou pelo formulário mora (Rua, Endereço), mapa da minha cidade (Ipueiras-CE)
 ![donors](https://user-images.githubusercontent.com/65264902/102721835-063f9280-42dc-11eb-9032-f87db6179e73.jpg)
 
 - Parte do Formulário para Cadastro (Com mapa visão via Satélite, para o doador marcar seu lugar no mapa, e aparecer na parte de Doadores)
