@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    
+    {% block titlePage %}
+            <title> </title>
+    {% endblock titlePage %}
+
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/styles/page.css">
+        <link rel="stylesheet" href="/styles/doadores.css">
+        
+        
+        <link rel="icon"
+            href="https://malucellidotlive.files.wordpress.com/2017/12/gorro-de-papai-noel-em-png-queroiamgem-ceic3a7a-crispim-1.png?w=768"
+        >
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin="" 
+        />
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin="">
+        </script>
+
+        
+    {% endblock %}
+</head>
+
+<body>
+    <div class="box-header">
+        <header class="header">
+            <a id="imageHeader" href="/">
+                <img src="https://i.pinimg.com/originals/2c/36/e1/2c36e11bbcabb9c4192fb63f0fd4de1b.png" alt="">
+            </a>
+            <div class="links">
+                <a href="/page"> HOME </a>
+                <a href="/doadores"> DOADORES </a>
+                <a href="/form"> AJUDE </a>
+
+            </div>
+        </header>
+    </div>
+    
+    {% block content %}
+
+    {% endblock content %}
+
+
+
+    {% block script %}
+        <script src="/scripts/page.js"></script>
+        <script src="/scripts/active.js"></script>
+        <script src="/scripts/mapDonors.js"></script>
+
+        <script src="/scripts/particles.js"></script>
+        <script src="/scripts/index.js"></script>
+    {% endblock %}
+</body>
+
+</html>

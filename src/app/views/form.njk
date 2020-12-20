@@ -1,0 +1,111 @@
+{% extends 'pagesconfig.njk' %}
+
+{% block titlePage %} 
+    <title> Obrigado por estar aqui  💝   </title> 
+{% endblock %} 
+
+{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon"
+        href="https://malucellidotlive.files.wordpress.com/2017/12/gorro-de-papai-noel-em-png-queroiamgem-ceic3a7a-crispim-1.png?w=768"
+    >
+
+    <link rel="stylesheet" href="/styles/form.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" 
+    />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
+    
+
+{% endblock %}
+
+
+
+
+{% block content %}
+    <form class="form" method="POST" action="/views" >
+
+    <section class="arvore">
+    </section>
+
+    <section>
+
+
+    <h4> Obrigado por estar aqui 💝 </h4>
+
+    <div class="item">
+        <div> Doador(a) </div>
+        <div>
+            <input type="text" name="name" placeholder="Informe seu nome" >
+        </div>
+    </div>
+
+    <div class="item">
+        <div> URL (Foto Doador) </div>
+        <div>
+            <input type="url" name="url" placeholder="URL de uma foto sua para ir pra a nossa page de doadores">
+        </div>
+    </div>
+
+    <div class="item">
+        <div> Contato </div>
+        <div>
+            <input type="text" name="contact" placeholder="Número para contato" >
+        </div>
+    </div>
+
+    <div class="item">
+        <div> Data de nascimento </div>
+        <div>
+            <input type="date" name="date" placeholder="Informe seu ano de nascimento" >
+        </div>
+    </div>
+
+    <div class="item">
+        <div> Endereço </div>
+        <div>
+            <input type="text" name="address" placeholder="Informe seu endereço" >
+        </div>
+        
+        <hr>
+        
+        <p> Por favor, click em zoom no mapa e marque clicando da melhor forma possível seu endereço para nós.</p>
+
+        <div id="mapid"></div>
+
+        <input type="hidden" name="lat">
+        <input type="hidden" name="lng">
+    </div>
+
+    <hr style="height: 2px; background: #d3e2e6; width: 100%; margin-bottom: 10px">
+
+    
+
+
+    <div class="item">
+        <div> Mensagem </div>
+        <textarea name="message" id="message"
+            placeholder="Fique a vontade para falar sobre você, ou doação, ou endereço (ponto de referência), etc ..."></textarea>
+    </div>
+
+
+
+
+    <button type="submit">
+        <div></div>Enviar<div></div>
+    </button>
+
+{% endblock %}
+
+{% block script %}
+    <script src="/scripts/mapForm.js"></script>
+    <script src="/scripts/active.js"></script>
+{% endblock %}

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background: url('https://abrilmdemulher.files.wordpress.com/2016/12/thinkstockphotos-158346474.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box-header {
+    background: url('https://i.pinimg.com/originals/4a/76/af/4a76afbfa05ce3a70af8d00849daebdd.png') no-repeat bottom / cover;
+    padding: 15px;
+    border-bottom: solid 2px #999;
+    
+}
+
+.header {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    align-items: center;
+    border-radius: 5px;
+   
+}
+
+@keyframes header {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header #imageHeader {
+    justify-self: center;
+}
+
+.header img {
+    width: 80px;
+    padding-top: 10px;
+}
+
+.links {
+    background: #111;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 4px;
+    animation: header;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.links a {
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 22px;
+    line-height: 24px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Yeon Sung', cursive;
+    opacity: 0.6;
+}
+
+.links a.active {
+    opacity: 1;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 2px;
+}
+
+.links a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+/* FORM */
+.form {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin: 40px auto;
+    z-index: 7;
+    min-height: 400px;
+    animation: form 0.5s ease-in-out;
+    box-shadow: 0 0 5px #fff;
+}
+
+@keyframes form {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form .arvore {
+    background: url('https://image.freepik.com/fotos-gratis/arvore-de-natal-com-decoracoes-em-um-fundo-luzes-do-bokeh_1048-3370.jpg') no-repeat center center / cover;
+}
+
+.form section:last-child {
+    padding: 10px;
+    background: #111;
+    color: white;
+}
+
+.form section h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    border-bottom: solid 2px #d3e2e6;
+    padding-bottom: 5px;
+}
+
+.item div:first-child {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.item input,
+.item textarea {
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    margin: 2px 0px 10px 0px;
+    color: #ff4f4f;
+    font-weight: bold;
+    padding: 5px 0px 5px 5px;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 4px;
+    border: solid 2px whitesmoke;
+    box-sizing: border-box;
+}
+
+.item input::placeholder,
+.item textarea::placeholder {
+    color: #ff4f4f;
+    font-size: 14px;
+}
+
+
+.item p {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.item hr {
+    width: 100%;
+    height: 2px;
+    background: #d3e2e6;
+    margin: 10px 0px;
+}
+
+.item textarea {
+    height: 120px;
+    resize: none;
+}
+
+#mapid {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+form button {
+    width: 100%;
+    padding: 10px 0px;
+    cursor: pointer;
+    color: #011;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 4px;
+}
+
+
+form button:hover {
+    color: #ff4f4f;
+    transition: 0.5s;
+}
+
+form button div {
+    width: 30px;
+    height: 30px;
+}
+
+form button div:first-child {
+    position: absolute;
+    left: 10px;
+    background: url('https://malucellidotlive.files.wordpress.com/2017/12/gorro-de-papai-noel-em-png-queroiamgem-ceic3a7a-crispim-1.png?w=768') no-repeat center center / cover;
+
+}
+
+form button div:last-child {
+    position: absolute;
+    right: 10px;
+    background: url('https://i.pinimg.com/originals/2c/36/e1/2c36e11bbcabb9c4192fb63f0fd4de1b.png') no-repeat center center / cover;
+}
+
+

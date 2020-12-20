@@ -1,0 +1,26 @@
+{% extends 'pagesconfig.njk' %}
+
+{% block titlePage %} 
+    <title> Doadores </title> 
+{% endblock %}
+
+{% block content %}
+    
+    <div class="windowMapa">
+
+        <div id="mapid">  </div>
+
+        <div class="donors">
+
+            {% for donor in donors %}
+                <span hidden>
+                    <img src="{{ donor.url }}" alt="">
+                    <p> {{ donor.name }} </p>
+                    <input type="hidden" name="lat" value="{{ donor.lat }}">
+                    <input type="hidden" name="lng" value="{{ donor.lng }} ">
+                </span>
+            {% endfor %}
+        </div>
+        
+    </div>
+{% endblock content %}        

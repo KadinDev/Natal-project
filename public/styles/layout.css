@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/arvore.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    text-align: center;
+}
+
+section img {
+    height: 310px;
+    transition: 1s;
+    animation: img 1s ease;
+}
+
+@keyframes img {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Yeon Sung', cursive;
+}
+
+div {
+    position: absolute;
+    width: 55%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 9;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#fff, #111);
+    mix-blend-mode: overlay;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation: a 1s ease;
+}
+
+@keyframes a {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+a span {
+    background: red;
+    padding: 5px 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px #fff;
+}
+
+a span:hover {
+    box-shadow: 0px 0px 2px 2px rgb(252, 195, 10);
+
+}
